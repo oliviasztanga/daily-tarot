@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+:root {
+  --bg-color: #E5CDDA;
+  --txt-color: #191919;
+  --font-accent: 'Playfair Display', serif;
+  --font-main: 'Source Sans Pro', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: var(--bg-color);
+}
+
+p { color: var(--txt-color); }
+
+.p-acc { font-family: var(--font-accent); }
+.p-reg { font-family: var(--font-main); }
+.p-lg { font-size: 7rem; }
+.p-md { font-size: 2rem; }
+.p-sm { font-size: 1.6rem; }
+.p-it { font-style: italic; }
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem;
 }
